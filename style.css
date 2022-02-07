@@ -68,9 +68,9 @@ h1{
 #result{
     margin-top: 5px;
     width: 200px;
-    height: 25px;
+    height: 30px;
     text-align: center;
-    border: 1.5px solid black;
+    border: 2px solid black;
 }
 
 #btn-calculate {
@@ -96,7 +96,7 @@ h1{
 
 .pos-abs1, .pos-abs2  {
     position:absolute;
-    left: 330px; 
+    left: 320px; 
 }
 
 .pos-abs1 {
