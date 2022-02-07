@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#workSpace{
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid #0096ff;
+    width: 380px;
+    height: 480px;
+    background-color: rgb(242, 242, 242);
+    font-family:'Neuzeit Grotesk', sans-serif;
+
+}
+
+h1{
+    text-align: center;
+    margin: 15px 0px;
+}
+
+#typeFund-form{
+    text-align: center;
+    height: 30px;
+    
+}
+#choose-typeFund{
+    margin-top: 5px;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+}
+
+#choose-typeCalculate{
+    margin-left: 36px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+}
+
+#typeCalculate-form{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#calculate-amount {
+    text-align: center;
+    
+}
+
+#amount {
+    margin-top: 5px;
+    width: 160px;
+    height: 25px;
+    text-align: center;
+}
+
+#percentTax {
+    margin-top: 5px;
+    width: 160px;
+    height: 25px;
+    text-align:center;
+}
+
+#result{
+    margin-top: 5px;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    border: 1.5px solid black;
+}
+
+#btn-calculate {
+    width: 160px;
+    height: 40px;
+    background-color: #70b62f;
+    border: 1px solid #70b62f;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#btn-calculate:hover {
+    background-color: #0096ff;
+    border: 1px solid #0096ff;
+    transition: 0.4s;
+}
+
+.pos-rel {
+    position:relative; 
+    margin: 0px auto;
+}
+
+.pos-abs1, .pos-abs2  {
+    position:absolute;
+    left: 330px; 
+}
+
+.pos-abs1 {
+    top: -7px;
+}
+
+.pos-abs2 {
+    top: -24px;
+}
+
+
