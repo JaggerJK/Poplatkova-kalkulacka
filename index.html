@@ -9,74 +9,72 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-    <section id="workSpace">
-
-    <header>
-        <h1>Poplatková kalkulačka</h1>
-    </header>
-
+    
+    <header></header>
+    
     <main>
-        <form id="typeFund-form">
-            <label for="choose-typeFund">Výběr fondu:</label><br>
-            <select name="choose-typeFund" id="choose-typeFund" onchange= "typeFundFunction()"> 
-              <option value="empty" id="empty">výpočet bez fondu</option>
-              <option value="alfa" id="alfa">Alfa fond</option>
-              <option value="beta" id="beta">Beta fond</option>
-              <option value="gama" id="gama">Gama fond</option>
-              <option value="delta" id="delta">Delta fond</option>
-              <option value="epsilon" id="epsilon">Epsilon fond</option>
-            </select>
-            <br><br>
-        </form>
+    
+        <section id="workSpace">
 
-        <div class="pos-rel">      
-            <div class=" pos-abs1">  
-                <a onclick="alert('Seznam fondů, které investiční společnost obhospodařuje a administruje.');">  
-                <span class="material-icons md-blue">help</span>
-                </a>
-            </div>   
-        </div>
+            <h1>Poplatková kalkulačka</h1>
+        
+            <form id="typeFund-form">
+                <label for="choose-typeFund">Výběr fondu:</label><br>
+                <select name="choose-typeFund" id="choose-typeFund" onchange= "typeFundFunction()"> 
+                <option value="empty" id="empty">výpočet bez fondu</option>
+                <option value="alfa" id="alfa">Alfa fond</option>
+                <option value="beta" id="beta">Beta fond</option>
+                <option value="gama" id="gama">Gama fond</option>
+                <option value="delta" id="delta">Delta fond</option>
+                <option value="epsilon" id="epsilon">Epsilon fond</option>
+                </select>
+                <br><br>
+            </form>
 
-        <br>
-        <form id="typeCalculate-form">
-            <label for="choose-typeCalculate">Typ výpočtu:</label>
-            <select name="choose-typeCalculate" id="choose-typeCalculate" onchange= "typeCalculateFunction()">
-              <option value="calculate-empty" id="calculate-empty">–––</option>
-              <option value="calculate-withTax" id="calculate-withTax">s poplatkem</option>
-              <option value="calculate-withoutTax" id="calculate-withoutTax">bez poplatku</option>
-            </select>
             <div class="pos-rel">      
-                <div class=" pos-abs2">  
-                    <a onclick="alert('Typ výpočtu <s poplatkem> je založen na přičtení procentuálního poplatku ke skutečně investované částce. Typ výpočtu <bez poplatku> je založen na odečtení poplatku od celkové investované částky (skutečně investovaná částka + poplatek). Tento typ výpočtu zjistí skutečně investovanou částku. JE NUTNÉ SI VYBRAT TYP VÝPOČTU!!!')">  
+                <div class=" pos-abs1">  
+                    <a onclick="alert('Seznam fondů, které investiční společnost obhospodařuje a administruje.');">  
                     <span class="material-icons md-blue">help</span>
                     </a>
                 </div>   
             </div>
-        </form>
-        <br><br>
 
+            <br>
+            <form id="typeCalculate-form">
+                <label for="choose-typeCalculate">Typ výpočtu:</label>
+                <select name="choose-typeCalculate" id="choose-typeCalculate" onchange= "typeCalculateFunction()">
+                <option value="calculate-empty" id="calculate-empty">–––</option>
+                <option value="calculate-withTax" id="calculate-withTax">s poplatkem</option>
+                <option value="calculate-withoutTax" id="calculate-withoutTax">bez poplatku</option>
+                </select>
+                <div class="pos-rel">      
+                    <div class=" pos-abs2">  
+                        <a onclick="alert('Typ výpočtu <s poplatkem> je založen na přičtení procentuálního poplatku ke skutečně investované částce. Typ výpočtu <bez poplatku> je založen na odečtení poplatku od celkové investované částky (skutečně investovaná částka + poplatek). Tento typ výpočtu zjistí skutečně investovanou částku. JE NUTNÉ SI VYBRAT TYP VÝPOČTU!!!')">  
+                        <span class="material-icons md-blue">help</span>
+                        </a>
+                    </div>   
+                </div>
+            </form>
+            <br><br>
 
-        <form id="calculate-amount">
-            <label for="amount"> Investovaná částka:</label><br>
-            <input type="number" placeholder="Kč" name="amount" id="amount" class="value" min="0.00" step="0.01"> 
-            <br><br>
-            <label for="percentTax"> Vstupní poplatek:</label><br>
-            <input type="number" placeholder="%" name="percentTax" id="percentTax" min="0.00" max="" step="0.01">
-            <br><br><br>
-            <input type="submit" value="Vypočítat" id="btn-calculate"><br><br><br>
-            <label for="result"> Výpočet:</label ><br>
-            <input type="text" placeholder="Kč" name="result" id="result" class="value" min="0.00" step="0.01" disabled>
-            <br><br>
-            
-        </form>
-       
+            <form id="calculate-amount">
+                <label for="amount"> Investovaná částka:</label><br>
+                <input type="number" placeholder="Kč" name="amount" id="amount" class="value" min="0.00" step="0.01"> 
+                <br><br>
+                <label for="percentTax"> Vstupní poplatek:</label><br>
+                <input type="number" placeholder="%" name="percentTax" id="percentTax" min="0.00" max="" step="0.01">
+                <br><br><br>
+                <input type="submit" value="Vypočítat" id="btn-calculate"><br><br><br>
+                <label for="result"> Výpočet:</label ><br>
+                <input type="text" placeholder="Kč" name="result" id="result" class="value" min="0.00" step="0.01" disabled>
+                <br><br>
+            </form>     
+
+        </section>
 
     </main>
 
     <footer></footer>
-
-    </section>
 
 <script src="./script.js"></script>
 </body>
